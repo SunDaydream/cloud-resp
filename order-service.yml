@@ -1,0 +1,15 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      # 注册到注册中心
+      defaultZone: http://127.0.0.1:7001/eureka/
+feign:
+  client:
+    config:
+      default:
+        # 连接超时
+        connectTimeout: 2000
+        # 读取超时
+        readTimeout: 2000
